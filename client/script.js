@@ -58,7 +58,6 @@ function chatStripe(isAI, value, uniqueId) {
     )
 }
 
-
 const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -84,7 +83,7 @@ const handleSubmit = async (e) => {
     clearInterval(loadInterval);
     messageDiv.innerHTML = '';
 
-    const response = await fetch('http://localhost:5000', {
+    const response = await fetch('https://codexai-yem7.onrender.com', {
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
